@@ -9,12 +9,12 @@ const App = () => {
   const fetchData = async (numberid) => {
     try {
       const res = await axios.get(`http://localhost:9876/numbers/${numberid}`);
-      setResponse(res.data); // Update state with the API response data
-      setError(null); // Reset error state if there was an error before
+      setResponse(res.data);
+      setError(null);
     } catch (error) {
       console.error(error);
-      setError('Error fetching data. Please try again.'); // Set error state
-      setResponse(null); // Reset response state
+      setError('Error fetching data. Please try again.'); 
+      setResponse(null);
     }
   };
 
