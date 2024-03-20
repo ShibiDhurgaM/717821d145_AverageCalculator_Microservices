@@ -26,7 +26,7 @@ const App = () => {
       <button onClick={() => fetchData('e')}>Fetch Even Numbers</button>
       <button onClick={() => fetchData('r')}>Fetch Random Numbers</button>
       {error && <div>Error: {error}</div>}
-      {response && ( // Display the response data if it exists
+      {response && ( 
         <div>
           <h2>Previous Window State: {JSON.stringify(response.windowPrevState)}</h2>
           <h2>Current Window State: {JSON.stringify(response.windowCurrState)}</h2>
