@@ -61,13 +61,13 @@ const updateNumbers = (newNumber) => {
     windowCurrState = numbers.slice(-WINDOW_SIZE);
 };
 
-// Set up CORS options
+
 const corsOptions = {
-    origin: 'http://localhost:3000', // Allow requests from this origin
-    optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204
+    origin: 'http://localhost:3000', 
+    optionsSuccessStatus: 200 
 };
 
-app.use(cors(corsOptions)); // Enable CORS with options
+app.use(cors(corsOptions)); 
 
 app.use(express.static(path.join(__dirname, 'client', 'build')));
 
